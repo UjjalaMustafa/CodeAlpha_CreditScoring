@@ -30,19 +30,6 @@ The dataset presented real-world challenges including dirty data, missing values
 
 ## 📂 Project Structure
 
-```
-credit-score-classification/
-│
-├── data/
-│   ├── train_1_.csv              # Training data (100,000 rows)
-│   └── test_1_.csv               # Test data (50,000 rows)
-│
-├── credit_scoring_project.ipynb  # Main Jupyter notebook (full pipeline)
-├── credit_score_predictions.csv  # Final predictions on test set
-├── feature_importances.csv       # Ranked feature importance scores
-└── README.md
-```
-
 ---
 
 ## 📊 Dataset
