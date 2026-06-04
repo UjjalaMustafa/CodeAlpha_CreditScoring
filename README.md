@@ -42,6 +42,10 @@ The dataset presented real-world challenges including dirty data, missing values
 | Target variable | `Credit_Score` (Good / Standard / Poor) |
 | Class distribution | Standard 53.2% · Poor 29.0% · Good 17.8% |
 
+> 📥 Dataset not included due to large file size.  
+> **[Click here to Download Dataset](https://drive.google.com/drive/folders/1pjynax8Y3GlhZ-4dxaGvTKda6m6ZlxBP?usp=sharing)**
+
+
 ### Key Features Used
 
 | Feature | Description |
@@ -172,7 +176,7 @@ cd credit-score-classification
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 
 # 3. Add the data files
-# Place train_1_.csv and test_1_.csv inside the data/ folder
+# Place train.csv and test.csv inside the data/ folder
 
 # 4. Open the notebook
 jupyter notebook credit_scoring_project.ipynb
