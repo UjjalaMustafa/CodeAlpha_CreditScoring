@@ -28,8 +28,6 @@ The dataset presented real-world challenges including dirty data, missing values
 
 ---
 
-## 📂 Project Structure
-
 ---
 
 ## 📊 Dataset
