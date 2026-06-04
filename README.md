@@ -83,25 +83,6 @@ credit-score-classification/
 
 ---
 
-## 🖼️ Visualizations
-
-### Target Class Distribution
-![Target Distribution](eda_target_distribution.png)
-
-### Missing Values Analysis
-![Missing Values](eda_missing_values.png)
-
-### Feature Distributions by Credit Score
-![Feature Distributions](eda_feature_distributions.png)
-
-### Top 10 Feature Importances
-![Feature Importance](feature_importance.png)
-
-### Confusion Matrix
-![Confusion Matrix](confusion_matrix.png)
-
----
-
 ## 🔧 Pipeline Walkthrough
 
 ### 1. Data Cleaning
