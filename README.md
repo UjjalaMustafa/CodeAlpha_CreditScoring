@@ -1,4 +1,3 @@
-
 # 💳 Credit Score Classification — Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square&logo=python)
@@ -6,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-Internship%20Project-purple?style=flat-square)
 
-> Predicting customer credit scores (Good / Standard / Poor) using machine learning on 100,000 real-world financial records — built as part of my Machine Learning  Internship.
+> Predicting customer credit scores (Good / Standard / Poor) using machine learning on 100,000 real-world financial records — built as part of my **Machine Learning Internship** at **CodeAlpha**.
 
 ---
 
@@ -25,8 +24,24 @@ The dataset presented real-world challenges including dirty data, missing values
 - Engineer meaningful features from raw financial data
 - Train and evaluate a classification model with class-imbalance handling
 - Generate predictions on unseen test data and export results
+- Build an interactive web app using Streamlit for live predictions
 
 ---
+
+## 📁 Repository Structure
+
+| File | Description |
+|------|-------------|
+| `credit_scoring_project.ipynb` | Main Jupyter Notebook — full pipeline |
+| `app.py` | Streamlit Web App — interactive predictions |
+| `credit_score_predictions.csv` | Test set predictions output |
+| `feature_importances.csv` | Feature importance scores |
+| `eda_target_distribution.png` | Class distribution chart |
+| `eda_missing_values.png` | Missing values chart |
+| `eda_feature_distributions.png` | Feature distributions chart |
+| `feature_importance.png` | Feature importance chart |
+| `confusion_matrix.png` | Confusion matrix chart |
+| `README.md` | Project documentation |
 
 ---
 
@@ -41,6 +56,7 @@ The dataset presented real-world challenges including dirty data, missing values
 | Class distribution | Standard 53.2% · Poor 29.0% · Good 17.8% |
 
 > 📥 Dataset not included due to large file size.  
+
 > **[Click here to Download Dataset](https://drive.google.com/drive/folders/1pjynax8Y3GlhZ-4dxaGvTKda6m6ZlxBP?usp=sharing)**
 
 
@@ -69,6 +85,7 @@ The dataset presented real-world challenges including dirty data, missing values
 | scikit-learn | ML pipeline, preprocessing, modeling |
 | Matplotlib & Seaborn | Data visualization |
 | Jupyter Notebook | Development environment |
+| Streamlit | Interactive web application |
 
 ---
 
@@ -165,22 +182,55 @@ Two new features were created to improve signal:
 
 ## 🚀 How to Run
 
+### 📓 Run Jupyter Notebook
+
 ```bash
 # 1. Clone the repository
-git clone https://github.com/UjjalaMustafa/credit-score-classification.git
-cd credit-score-classification
+git clone https://github.com/UjjalaMustafa/CodeAlpha_CreditScoring.git
+cd CodeAlpha_CreditScoring
 
 # 2. Install dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 
-# 3. Add the data files
-# Place train.csv and test.csv inside the data/ folder
-
-# 4. Open the notebook
+# 3. Open the notebook
 jupyter notebook credit_scoring_project.ipynb
 ```
 
 > Run all cells from top to bottom. Predictions will be saved automatically as `credit_score_predictions.csv`.
+
+---
+
+### 🌐 Run Streamlit Web App
+
+```bash
+# 1. Install streamlit
+pip install streamlit
+
+# 2. Run the app
+streamlit run app.py
+```
+
+> App will open automatically at `http://localhost:8501`  
+> Upload `train.csv` from the sidebar to activate EDA, Model, and Predict features!
+
+---
+
+## 🌐 Streamlit Web App Features
+
+This project includes a fully interactive web app built with Streamlit!
+
+| Tab | What it does |
+|-----|-------------|
+| 🏠 **Overview** | Project summary, key metrics, tech stack |
+| 📊 **EDA** | Interactive class distribution and missing values charts |
+| 🤖 **Model & Results** | Feature importance chart, per-class performance table |
+| 🔮 **Predict** | Fill a form with customer details → get instant credit score prediction |
+
+**To run the app:**
+```bash
+pip install streamlit
+streamlit run app.py
+```
 
 ---
 
